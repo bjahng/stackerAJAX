@@ -123,7 +123,6 @@ var getInspiration = function(answerers) {
 		type: "GET",
 	})
 	.done(function(result){ //this waits for the ajax to return with a succesful promise object
-		console.log(result);
 		var searchResults = showSearchResults(request.tag, result.items.length);
 
 		$('.search-results').html(searchResults);
